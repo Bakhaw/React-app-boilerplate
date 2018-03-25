@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import './App.scss';
-import image from './image.jpeg';
 
-class App extends Component {
+import avocat from './avocat.gif';
+import './App.scss';
+
+class App extends Component {
   render() {
     return (
       <div>
         <h3>React here!</h3>
-        <img src={image} alt=""/>
+        <img src={avocat} alt="el avocado"/>
       </div>
     );
   }

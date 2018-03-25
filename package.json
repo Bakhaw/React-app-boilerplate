@@ -2,6 +2,8 @@
   "name": "avocado",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/Bakhaw/React-app-boilerplate.git",
+  "author": "Faissal",
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",

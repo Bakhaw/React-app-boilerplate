@@ -1,1 +1,1 @@
-[Ressources] (https://www.valentinog.com/blog/webpack-4-tutorial/)
+[Ressources for webpack 4](https://www.valentinog.com/blog/webpack-4-tutorial/)
