@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 
-import avocat from './avocat.gif';
-import './App.scss';
+import Routing from './routing/Router';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h3>React here!</h3>
-        <img src={avocat} alt="el avocado"/>
+        <Routing />
       </div>
     );
   }
