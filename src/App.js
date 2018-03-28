@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import avocat from './avocat.gif';
 
-import Routing from './routing/Router';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
-        <Routing />
-      </MuiThemeProvider>
+      <div>
+        <p>React here!</p>
+        <img src={avocat}/>
+      </div>
     );
   }
 }
