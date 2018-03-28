@@ -1,39 +1,31 @@
 import React, { Component } from 'react';
+
+import Item from './Item';
 import items from '../items';
+
 
 class Piece extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      items
-    }
+    this.state = { items }
   }
 
-  render() {
+  displayItems = () => {
     const { items } = this.state;
     const piece = this.props.match.params.piece;
 
     const appart = items[piece];
 
-    console.log(appart);
+    return appart.map((data, index) => <Item key={index} data={data}/>)
+  }
+
+  render() {
     return (
       <div>
-        {
-          appart.map((data, index) => {
-            return (
-              <ul key={index}>
-                <li>
-                  {data.name}
-                  {data.checked ? <p>V</p> : <p>X</p>}
-                  {data.expansive ? <p>Cher</p> : <p>Pas cher</p>}
-                </li>
-              </ul>
-            );
-          })
-        }
+        {this.displayItems()}
       </div>
     );
   }
 }
- 
+
 export default Piece;

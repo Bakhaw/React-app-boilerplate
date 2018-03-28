@@ -10,9 +10,6 @@ class Routing extends Component {
       <Router>
         
         <div>
-          <Link to='/'>
-            <p>Accueil</p>
-          </Link>
 
           <Switch>
 
